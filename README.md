@@ -18,19 +18,3 @@ This is a repository for Nitro examples. Feel free to contribute.
 - [stream](stream) - An example of a streaming service and client
 - [waitgroup](waitgroup) - Demonstrates how to use a waitgroup with a service
 
-## Install
-
-Install [protoc](https://github.com/google/protobuf) for your environment. Then:
-
-```shell
-# install protoc-gen-go
-go get github.com/golang/protobuf/{proto,protoc-gen-go}
-# install protoc-gen-micro
-go get github.com/micro/micro/v2/cmd/protoc-gen-micro@master
-```
-
-To recompile any proto after changes:
-
-```shell
-protoc --proto_path=$GOPATH/src:. --micro_out=. --go_out=. path/to/proto
-```
